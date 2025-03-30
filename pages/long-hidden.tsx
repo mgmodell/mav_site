@@ -8,6 +8,7 @@ import { InputNumber } from 'primereact/inputnumber';
 export default function LongHidden() {
     const [year, setYear] = useState(0);
     const [typeOfRelative, setTypeOfRelative] = useState('');
+    const [name, setName] = useState('');
     return (
         <>
         <Head>
@@ -30,10 +31,18 @@ export default function LongHidden() {
                     />
                 <label htmlFor="typeOfRelative">Type of Relative</label>
             </FloatLabel>
+            <FloatLabel>
+                <InputText
+                    id="name"
+                    value={typeOfRelative}
+                    onChange={(e) => setName(e.target.value)}
+                    />
+                <label htmlFor="name">Name</label>
+            </FloatLabel>
 
 
             <h1>Long Hidden</h1>
-            <p>Way back in {year}, {typeOfRelative} </p>
+            <p>Way back in {year}, {typeOfRelative} {name} </p>
         </div>
         </>
     );
