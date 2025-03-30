@@ -51,7 +51,7 @@ export default function LongHidden() {
 
 
             <h1>Long Hidden</h1>
-            <p>Way back in {year}, {typeOfRelative} {name} hid the afikomen so well that no one has ever found it.
+            <p>Way back in {year}, {typeOfRelative || '_________'} {name} hid the afikomen so well that no one has ever found it.
                 Technically, that year's family seder never ended. Over the years, all of the cousins have looked
                 for it, but non one has come close to recovering it. Bubbe {womansName} even hired a 
             </p>
