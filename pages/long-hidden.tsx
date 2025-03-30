@@ -9,6 +9,7 @@ export default function LongHidden() {
     const [year, setYear] = useState(0);
     const [typeOfRelative, setTypeOfRelative] = useState('');
     const [name, setName] = useState('');
+    const [womansName, setWomansName] = useState('');
     return (
         <>
         <Head>
@@ -34,15 +35,26 @@ export default function LongHidden() {
             <FloatLabel>
                 <InputText
                     id="name"
-                    value={typeOfRelative}
+                    value={name}
                     onChange={(e) => setName(e.target.value)}
                     />
                 <label htmlFor="name">Name</label>
             </FloatLabel>
+            <FloatLabel>
+                <InputText
+                    id="womansName"
+                    value={womansName}
+                    onChange={(e) => setWomansName(e.target.value)}
+                    />
+                <label htmlFor="womansName">Woman's Name</label>
+            </FloatLabel>
 
 
             <h1>Long Hidden</h1>
-            <p>Way back in {year}, {typeOfRelative} {name} </p>
+            <p>Way back in {year}, {typeOfRelative} {name} hid the afikomen so well that no one has ever found it.
+                Technically, that year's family seder never ended. Over the years, all of the cousins have looked
+                for it, but non one has come close to recovering it. Bubbe {womansName} even hired a 
+            </p>
         </div>
         </>
     );
