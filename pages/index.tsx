@@ -32,6 +32,12 @@ export default function Home() {
             </Link>
 
           </li>
+          <li>
+            <Link href="/theSoupRecipe">
+              The Soup Recipe
+            </Link>
+
+          </li>
 
         </ul>
 
