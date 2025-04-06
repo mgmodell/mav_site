@@ -34,7 +34,8 @@ export default function StoryOfPassover() {
     const [foodItems, setFoodItems] = useState('');
     const [bodyOfWater, setBodyOfWater] = useState('');
     const [verb2, setVerb2] = useState('');
-
+    const [noun3, setNoun3] = useState('');
+    const [noun4, setNoun4] = useState('');
 
     const disabled = !(
         governmentRank &&
@@ -59,6 +60,8 @@ export default function StoryOfPassover() {
         smallOrganisms &&
         aFeeling &&
         weatherPhenomenon &&
+        noun3 &&
+        noun4 &&
         noun2
     );
 
@@ -128,6 +131,7 @@ export default function StoryOfPassover() {
                             {textInput('Liquid', liquid, setLiquid)}
                             {textInput('Plural Noun', pluralNoun1, setPluralNoun1)}
                             {textInput('Verb Ending in -ing', verbEndingInIng1, setVerbEndingInG1)}
+                            {textInput('Noun', noun3, setNoun3)}
                             {textInput('Plural Noun', pluralNoun2, setPluralNoun2)}
                             {textInput('Adjective', adjective, setAdjective)}
                             {textInput('Small Organisms', smallOrganisms, setSmallOrganisms)}
@@ -143,6 +147,7 @@ export default function StoryOfPassover() {
                             {textInput('Food Items', foodItems, setFoodItems)}
                             {textInput('Body of Water', bodyOfWater, setBodyOfWater)}
                             {textInput('Verb', verb2, setVerb2)}
+                            {textInput('Noun', noun4, setNoun4)}
                         </p>
                     </div>
                 </AccordionTab>
@@ -172,11 +177,11 @@ export default function StoryOfPassover() {
                             <li>Frogs {insertWord(verbEndingInIng1)} around everywhere underfoot</li>
                             <li>{insertWord(smallOrganisms)} crawling over the bodies of the people making them {insertWord(aFeeling)}</li>
                             <li>{insertWord(pluralNoun3)} eating the crops</li>
-                            <li>Cattle disease</li>
+                            <li>{insertWord(noun3)} disease</li>
                             <li>Painful {insertWord(pluralNoun2)} all over the body</li>
                             <li>{insertWord(pluralNoun1)} running wild</li>
                             <li>{insertWord(weatherPhenomenon)} falling from the {insertWord(noun2)}</li>
-                            <li>Complete darkness over the entire land</li>
+                            <li>Complete darkness over the entire {insertWord(noun4)}</li>
                             <li>{insertWord(verbEndingInIng2)} of the first born son</li>
                         </ol>
                         The {insertWord(governmentRank)} was pretty sad about the {insertWord(verbEndingInIng2)} of his son because he
