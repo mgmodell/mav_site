@@ -208,7 +208,7 @@ export default function TheSoupRecipe() {
                     <>
                         <h1>The {insertWord( noun1 )} ball soup recipe</h1>
                         <p>
-                            Get ready to make the world's most {insertWord(adjective1)} soup. You may even want to double this recipe
+                            Get ready to make the world&apos;s most {insertWord(adjective1)} soup. You may even want to double this recipe
                             and keep half in the {insertWord(noun2)} for later.
                         </p>
                         <table>

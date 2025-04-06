@@ -88,7 +88,7 @@ export default function LongHidden() {
                                     value={womansName1}
                                     onChange={(e) => setWomansName1(e.target.value)}
                                 />
-                                <label htmlFor="womansName">Woman's Name</label>
+                                <label htmlFor="womansName">Woman&apos;s Name</label>
                             </FloatLabel><br />
                             <FloatLabel>
                                 <InputText
@@ -112,7 +112,7 @@ export default function LongHidden() {
                                     value={mansName}
                                     onChange={(e) => setMansName(e.target.value)}
                                 />
-                                <label htmlFor="mansName">Man's name</label>
+                                <label htmlFor="mansName">Man&apos;s name</label>
                             </FloatLabel><br />
                             <FloatLabel>
                                 <InputText
@@ -136,7 +136,7 @@ export default function LongHidden() {
                                     value={womansName2}
                                     onChange={(e) => setWomansName2(e.target.value)}
                                 />
-                                <label htmlFor="womansName2">Woman's Name</label>
+                                <label htmlFor="womansName2">Woman&apos;s Name</label>
                             </FloatLabel><br />
                             <FloatLabel>
                                 <InputText
@@ -196,7 +196,7 @@ export default function LongHidden() {
                 >
                     <h1>The Long-Hidden Afikomen</h1>
                     <p>Way back in <u>{year}</u>, <u>{typeOfRelative || '_________'}</u> <u>{name1}</u> hid the afikomen so well that no one has ever found it.
-                        Technically, that year's family seder never ended. Over the years, all of the cousins have looked
+                        Technically, that year&apos;s family seder never ended. Over the years, all of the cousins have looked
                         for it, but non one has come close to recovering it. Bubbe <u>{womansName1}</u> even hired a <u>{adjective1 || '_________'}</u> private
                         investigator to look into things, but there was no sign of that <u>{adjective2 || '_________'}</u> afikomen.
                     </p>
@@ -207,7 +207,7 @@ export default function LongHidden() {
                     </p>
                     <p>
                         Last year, cousin <u>{name2 || '_________'}</u> mentioned seeing it in an old <u>{noun1 || '_________'}</u> behind
-                        the <u>{spotInRoom || '_________'}</u>. To this day, no one knows. That afikomen will probably not be found until there's
+                        the <u>{spotInRoom || '_________'}</u>. To this day, no one knows. That afikomen will probably not be found until there&apos;s
                         a <u>{noun2 || '_________'}</u> on the <u>{opjectInSpace || '_________'}</u>.
                     </p>
                 </AccordionTab>
