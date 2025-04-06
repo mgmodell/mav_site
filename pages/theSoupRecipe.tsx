@@ -202,7 +202,7 @@ export default function TheSoupRecipe() {
                 </AccordionTab>
 
                 <AccordionTab
-                    disabled={disabled}
+                    //disabled={disabled}
                     header={`Story: ${disabled ? 'Not Ready' : 'Click to Read!'}`}
                 >
                     <>

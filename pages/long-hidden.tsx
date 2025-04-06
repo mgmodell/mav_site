@@ -191,7 +191,7 @@ export default function LongHidden() {
                 </AccordionTab>
 
                 <AccordionTab
-                    disabled={disabled}
+                    //disabled={disabled}
                     header={`Story: ${disabled ? 'Not Ready' : 'Click to Read!'}`}
                 >
                     <h1>The Long-Hidden Afikomen</h1>
