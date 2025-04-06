@@ -40,7 +40,7 @@ export default function Home() {
           </li>
           <li>
             <Link href="/storyOfPassover">
-              Maverick's Story of Passover
+              Maverick&apos;s Story of Passover
             </Link>
           </li>
 
