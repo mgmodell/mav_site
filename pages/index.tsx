@@ -38,6 +38,11 @@ export default function Home() {
             </Link>
 
           </li>
+          <li>
+            <Link href="/storyOfPassover">
+              Maverick's Story of Passover
+            </Link>
+          </li>
 
         </ul>
 
