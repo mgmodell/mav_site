@@ -7,6 +7,7 @@ import { FloatLabel } from 'primereact/floatlabel';
 import { InputText } from 'primereact/inputtext';
 import { InputNumber } from 'primereact/inputnumber';
 import { Accordion, AccordionTab } from 'primereact/accordion';
+import Link from "next/link";
 
 export default function StoryOfPassover() {
 
@@ -111,6 +112,7 @@ export default function StoryOfPassover() {
                 <title>(Maverick&apos;s) Story of Passover</title>
             </Head>
             <Accordion activeIndex={0} className="w-full md:w-25rem">
+                <Link href="/">Home</Link>
                 <AccordionTab
                     header="Fill in the Blanks"
 

@@ -7,6 +7,7 @@ import { FloatLabel } from 'primereact/floatlabel';
 import { InputText } from 'primereact/inputtext';
 import { InputNumber } from 'primereact/inputnumber';
 import { Accordion, AccordionTab } from 'primereact/accordion';
+import Link from "next/link";
 
 export default function LongHidden() {
     const [year, setYear] = useState(0);
@@ -49,6 +50,7 @@ export default function LongHidden() {
             <Head>
                 <title>The Long-Hidden Afkikomen</title>
             </Head>
+            <Link href="/">Home</Link>
             <Accordion activeIndex={0} className="w-full md:w-25rem">
                 <AccordionTab
                     header="Fill in the Blanks"

@@ -6,6 +6,7 @@ import "primereact/resources/primereact.min.css";
 import { FloatLabel } from 'primereact/floatlabel';
 import { InputText } from 'primereact/inputtext';
 import { Accordion, AccordionTab } from 'primereact/accordion';
+import Link from "next/link";
 
 export default function NewFourQuestions() {
     const [verb1, setVerb1] = useState('');
@@ -62,6 +63,7 @@ export default function NewFourQuestions() {
             <Head>
                 <title>A New Four Questions</title>
             </Head>
+            <Link href="/">Home</Link>
             <Accordion activeIndex={0} className="w-full md:w-25rem">
                 <AccordionTab
                     header="Fill in the Blanks"

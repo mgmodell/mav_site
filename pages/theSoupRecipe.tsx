@@ -7,6 +7,7 @@ import { FloatLabel } from 'primereact/floatlabel';
 import { InputText } from 'primereact/inputtext';
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { InputNumber } from "primereact/inputnumber";
+import Link from "next/link";
 
 export default function TheSoupRecipe() {
 
@@ -148,6 +149,7 @@ export default function TheSoupRecipe() {
             <Head>
                 <title>The <u>{noun1}</u> ball soup recipe</title>
             </Head>
+            <Link href="/">Home</Link>
             <Accordion activeIndex={0} className="w-full md:w-25rem">
                 <AccordionTab
                     header="Fill in the Blanks"
