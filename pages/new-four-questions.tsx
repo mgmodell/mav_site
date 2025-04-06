@@ -44,6 +44,19 @@ export default function NewFourQuestions() {
         verb4
     );
 
+    const textInput = ( label: string, value: string, setValue: (value: string) => void ) => {
+        return(
+            <FloatLabel>
+                <InputText
+                    id={label}
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                />
+                <label htmlFor={label}>{label}</label>
+            </FloatLabel>
+        )
+    }
+
     return (
         <>
             <Head>
@@ -56,134 +69,22 @@ export default function NewFourQuestions() {
                     <p>Fill in the blanks to create a story.</p>
                     <div className="card flex justify-content-center">
                         <p>
-                            <FloatLabel>
-                                <InputText
-                                    id="verb1"
-                                    value={verb1}
-                                    onChange={(e) => setVerb1(e.target.value || 0)}
-                                />
-                                <label htmlFor="verb1">Verb</label>
-                            </FloatLabel><br />
-                            <FloatLabel>
-                                <InputText
-                                    id="foodItem"
-                                    value={foodItem}
-                                    onChange={(e) => setFoodItem(e.target.value || 0)}
-                                />
-                                <label htmlFor="foodItem">Food Item</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="adjective1"
-                                    value={adjective1}
-                                    onChange={(e) => setAdjective1(e.target.value || 0)}
-                                />
-                                <label htmlFor="adjective1">Adjective</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="familyMemberPlural"
-                                    value={familyMemberPlural}
-                                    onChange={(e) => setFamilyMemberPlural(e.target.value || 0)}
-                                />
-                                <label htmlFor="familyMemberPlural">Family Member (plural)</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="place"
-                                    value={place}
-                                    onChange={(e) => setPlace(e.target.value || 0)}
-                                />
-                                <label htmlFor="place">Place</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="typeOfSeasoning"
-                                    value={typeOfSeasoning}
-                                    onChange={(e) => setTypeOfSeasoning(e.target.value || 0)}
-                                />
-                                <label htmlFor="typeOfSeasoning">Type of seasoning</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="adjective2"
-                                    value={adjective2}
-                                    onChange={(e) => setAdjective2(e.target.value || 0)}
-                                />
-                                <label htmlFor="adjective2">Adjective</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="pluralNoun1"
-                                    value={pluralNoun1}
-                                    onChange={(e) => setPluralNoun1(e.target.value || 0)}
-                                />
-                                <label htmlFor="pluralNoun1">Plural noun</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="aMemoryYouHave"
-                                    value={aMemoryYouHave}
-                                    onChange={(e) => setAMemoryYouHave(e.target.value || 0)}
-                                />
-                                <label htmlFor="aMemoryYouHave">A memory you have</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="verb2"
-                                    value={verb2}
-                                    onChange={(e) => setVerb2(e.target.value || 0)}
-                                />
-                                <label htmlFor="verb2">Verb</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="pluralNoun2"
-                                    value={pluralNoun2}
-                                    onChange={(e) => setPluralNoun2(e.target.value || 0)}
-                                />
-                                <label htmlFor="pluralNoun2">Plural noun</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="place2"
-                                    value={place2}
-                                    onChange={(e) => setPlace2(e.target.value || 0)}
-                                />
-                                <label htmlFor="place2">Place</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="verb3"
-                                    value={verb3}
-                                    onChange={(e) => setVerb3(e.target.value || 0)}
-                                />
-                                <label htmlFor="verb3">Verb</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="adjective3"
-                                    value={adjective3}
-                                    onChange={(e) => setAdjective3(e.target.value || 0)}
-                                />
-                                <label htmlFor="adjective3">Adjective</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="adjective4"
-                                    value={adjective4}
-                                    onChange={(e) => setAdjective4(e.target.value || 0)}
-                                />
-                                <label htmlFor="adjective4">Adjective</label>
-                            </FloatLabel>
-                            <FloatLabel>
-                                <InputText
-                                    id="verb4"
-                                    value={verb4}
-                                    onChange={(e) => setVerb4(e.target.value || 0)}
-                                />
-                                <label htmlFor="verb4">Verb</label>
-                            </FloatLabel>
+                            {textInput('Verb', verb1, setVerb1)}
+                            {textInput('Food Item', foodItem, setFoodItem)}
+                            {textInput('Adjective', adjective1, setAdjective1)}
+                            {textInput('Family Member (plural)', familyMemberPlural, setFamilyMemberPlural)}
+                            {textInput('Place', place, setPlace)}
+                            {textInput('Type of seasoning', typeOfSeasoning, setTypeOfSeasoning)}
+                            {textInput('Adjective', adjective2, setAdjective2)}
+                            {textInput('Plural noun', pluralNoun1, setPluralNoun1)}
+                            {textInput('A memory you have', aMemoryYouHave, setAMemoryYouHave)}
+                            {textInput('Verb', verb2, setVerb2)}
+                            {textInput('Plural noun', pluralNoun2, setPluralNoun2)}
+                            {textInput('Place', place2, setPlace2)}
+                            {textInput('Verb', verb3, setVerb3)}
+                            {textInput('Adjective', adjective3, setAdjective3)}
+                            {textInput('Adjective', adjective4, setAdjective4)}
+                            {textInput('Verb', verb4, setVerb4)}
                         </p>
                     </div>
                 </AccordionTab>
