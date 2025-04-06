@@ -135,7 +135,7 @@ export default function TheSoupRecipe() {
                         <InputNumber
                             id={label}
                             value={value}
-                            onChange={(e) => setter(e.target.value || 0)}
+                            onChange={(e) => setter(e.value || 0)}
                         />
                         <label htmlFor={label}>{label}</label>
                     </FloatLabel><br />
