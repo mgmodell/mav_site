@@ -26,7 +26,23 @@ export default function LongHidden() {
     const [noun2, setNoun2] = useState('');
     const [opjectInSpace, setObjectInSpace] = useState('');
 
-    const disabled = !(year && typeOfRelative && name1 && womansName1 && adjective1 && adjective2 && mansName && pieceOfFurniture && roomInHouse && womansName2 && pluralNoun);
+    const disabled = !(year &&
+        typeOfRelative &&
+        name1 &&
+        womansName1 &&
+        adjective1 &&
+        adjective2 &&
+        mansName &&
+        pieceOfFurniture &&
+        roomInHouse &&
+        womansName2 &&
+        pluralNoun &&
+        name2 &&
+        noun1 &&
+        spotInRoom &&
+        noun2 &&
+        opjectInSpace
+    );
 
     return (
         <>
