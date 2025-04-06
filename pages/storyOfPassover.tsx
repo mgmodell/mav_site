@@ -143,7 +143,6 @@ export default function StoryOfPassover() {
                             {textInput('Food Items', foodItems, setFoodItems)}
                             {textInput('Body of Water', bodyOfWater, setBodyOfWater)}
                             {textInput('Verb', verb2, setVerb2)}
-                            {textInput('Body of Water', '', setBodyOfWater)}
                         </p>
                     </div>
                 </AccordionTab>
