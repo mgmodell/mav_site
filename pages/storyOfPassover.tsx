@@ -159,13 +159,14 @@ export default function StoryOfPassover() {
                     </p>
                     <p>
                         The {insertWord(noun)} was watched by his sister and found by the daughter of {insertWord(governmentRank)}. She adopted him. A while later, he had
-                        a mid-life crisis and he left after he realised he was {insertWord(nation)}. He got married in some {insertWord(placeName)} and found
+                        a mid-life crisis and he left after he realised he was {insertWord(nation)}. He got married in {insertWord(placeName)} and found
                         burning bush. The burning bush talked to him and told him he had to free his people.
                     </p>
                     <p>
-                        He came back and tried to convince his brother, who was the current {insertWord(governmentRank)}, to let them go. After the brother said
-                        <i>no</i> he did a whole bunch of {insertWord(adjective)} tricks. After the {insertWord(adjective)} tricks, the brother was pretty sad that Moses had better
-                        {insertWord(adjective)} than him. The {insertWord(adjective)} tricks were called the 10 plagues and they were:
+                        He came back and tried to convince his brother, who was the current {insertWord(governmentRank)}, to let them go. After the brother
+                        said <i>no</i> he did a whole bunch of {insertWord(adjective)} tricks. After the {insertWord(adjective)} tricks, the brother was pretty
+                        sad that Moses had better {insertWord(adjective)} than him. The {insertWord(adjective)} tricks were called the 10 plagues and they
+                        were:
                         <ol>
                             <li>All the water in the land turned to {insertWord(liquid)}</li>
                             <li>Frogs {insertWord(verbEndingInIng1)} around everywhere underfoot</li>
